@@ -1,0 +1,66 @@
+.row.first {
+    margin-bottom: 50px;
+}
+
+.row>.col-5 {
+    width: 41%;
+}
+
+.row>.col-1 {
+    width: 8%;
+}
+
+.row>.col-5 .proj-descr .proj-title {
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+}
+
+.row>.col-5 .proj-descr p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.row>.col-5 .proj-img-wrap img {
+    display: block;
+    width: 100%;
+}
+
+.row>.col-6 {
+    width: 49%;
+}
+
+.row.proj-detail>.col-6 {
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.row.proj-detail>.col-6 p {
+    line-height: 28px;
+}
+
+/* Medium devices */
+@media only screen and (max-width: 992px) {   
+    .row>.col-5 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .row.proj-detail {
+        flex-direction: row;
+    }
+}
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+    .row.proj-detail {
+        flex-direction: column;
+    }
+
+    .row.proj-detail>.col-6 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+

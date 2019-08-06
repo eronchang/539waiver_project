@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(51, 51, 51, .9);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 10px;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    color: #000;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+header nav .brand {
+    font-size: 30px;
+    color: #006a91;
+}
+
+header nav ul.nav-menu {
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.nav-menu>li {
+    display: inline-block;
+    color: #006a91;
+    padding: 0 10px;
+    font-weight: 300;
+    transition: color .5s ease, font-weight .5s ease;
+}
+
+header nav ul.nav-menu>li:hover {
+    color: #000;
+}
+
+header nav ul.nav-menu>li.active {
+    color: #000;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .icons {
+    text-align: center;
+    margin: 30px auto 30px auto;
+    padding: 10px 0;
+}
+
+footer .icons i {
+    font-size: 24px;
+    margin: 0 5px;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+footer .icons:hover i {
+    opacity: .5;
+}
+
+footer .icons i:hover {
+    opacity: 1;
+}
+
+footer .icons i.fa.fa-linkedin {
+    color: #096A90;
+}
+
+footer .icons i.fa.fa-instagram {
+    color: #E43A4C;
+}
+
+/* Medium devices */
+@media only screen and (max-width: 992px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+    header nav .brand {
+        font-size: 10vw;
+        padding-bottom: .25em;
+    }
+
+    header nav {
+        display: flex;
+        flex-flow: column;
+    }
+
+    header nav ul.nav-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: .25em;
+        border-top: 1px solid #0087ba;
+    }
+
+    header nav ul.nav-menu>li {
+        display: inline-flex;
+    }
+}

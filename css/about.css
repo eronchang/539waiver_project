@@ -1,0 +1,35 @@
+.row>.col-6 {
+    width: 49%;
+}
+
+.row>.col-6>.profilepic-wrap {
+    width: 100%;
+}
+
+.row>.col-6>.profilepic-wrap>img.profilepic {
+    display: block;
+    width: 100%;
+}
+
+.row>.col-6>.intro-wrap {
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.row>.col-6>.intro-wrap>.intro-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.row>.col-6>.intro-wrap>p {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+/* Medium devices */
+@media only screen and (max-width: 992px) {   
+    .row>.col-6 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
