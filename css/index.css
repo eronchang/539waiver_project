@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #006a91;
+    background-color: #335865;
     color: #FFF;
     text-align: center;
     transition: .5s ease;
@@ -44,7 +44,7 @@
 }
 
 /* Medium devices */
-@media only screen and (max-width: 992px) {   
+@media only screen and (max-width: 992px) {
     .row>.col-6 {
         width: 100%;
         margin: 10px 0;
